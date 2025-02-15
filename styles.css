@@ -1,0 +1,126 @@
+/* CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body và phông chữ (thích thì chỉnh) */
+body {
+    background-color: #161a1a
+	;
+    color: white;
+    font-family: 'Times New Roman', serif;
+    line-height: 1.6;
+}
+
+/* Thanh điều hướng (không cần quan tâm) */
+.navbar {
+    background-color: #333;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Phần header (no touch) */
+.header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #111;
+}
+
+.header img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+}
+/* Phần chữ chào mừng (thích thì chỉnh)*/
+.header h1 {
+    margin-top: 20px;
+    font-size: 36px;
+    color: #ffcc00;
+}
+
+/* Phần config giới thiệu thành viên (no touch)*/
+.members {
+    padding: 20px;
+}
+
+.member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.member.left {
+    flex-direction: row;
+}
+
+.member.right {
+    flex-direction: row-reverse;
+}
+/* Phần ảnh và khung của thành viên (thích thì chỉnh)*/
+.member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 20px;
+    object-fit: cover;
+    border: 3px solid #ccc;
+}
+
+.member .info {
+    max-width: 600px;
+}
+/* Phần chữ tên của thành viên (thích thì chỉnh)*/
+.member h2 {
+    font-size: 24px;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+/* Phần giới thiệu của thành viên (thích thì chỉnh)*/
+.member p {
+    font-size: 16px;
+    color: #ccc;
+}
+
+/* Phần About và Contact (no touch)*/
+.about, .contact {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #111;
+    margin: 20px 0;
+}
+
+.about h2, .contact h2 {
+    font-size: 28px;
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+.about p, .contact p {
+    font-size: 18px;
+    color: #ccc;
+}
